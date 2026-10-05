@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>GERENCIADOR DE EVENTOS</title>
+</head>
+<body>
+    <nav>
+        <h2>GERENCIADOR DE EVENTOS</h2>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="cadastroPalestrantes.html">Cadastro de palestrantes</a></li>
+            <li><a href="cadastroEventos.html">Cadastro de eventos</a></li>
+            <li><a href="gerentes.html">Gerenciar palestrantes</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Cadastrar Evento</h1>
+
+        <form id="container-label-cadastro">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" required>
+
+            <label for="descricao">Descrição:</label>
+            <input type="text" id="descricao" required>
+
+            <label for="local">Local:</label>
+            <input type="text" id="local" required>
+
+            <label for="data">Data:</label>
+            <input type="date" id="data" required>
+
+            <label for="palestranteid">ID do palestrante:</label>
+            <input type="number" id="palestranteid" min="1" required>
+
+            <button type="submit">Cadastrar evento</button>
+        </form>
+    </main>
+
+    <script src="cadastroEventos.js"></script>
+</body>
+</html>
